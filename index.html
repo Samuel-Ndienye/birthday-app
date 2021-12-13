@@ -2,62 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>birthday-app</title>
-  <link rel="stylesheet" href="index.js">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Akan Names</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento,Playfair+Display+SC,Sorts+Mill+Goudy &display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Gugi|Kalam" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="images/">
 </head>
-<body>
-  <div class="container">
-    <form>
-      <div class="base">
-        <h4>Age Calculator</h4>
-      </div>
-      <div class="block">
-        <p class="title">Date</p>
-        <input type="text" name="date" id="date" placeholder="dd" minlength="1" maxlength="2" required>
-     </div>
-     <div class="block">
-       <p class="title">Month</p>
-       <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2" required>
-     </div>
-     <div class="block">
-       <p class="title">Year</p>
-       <input type="text" name="year" id="year" placeholder="yyyy" minlength="4" maxlength="4" required>
-     </div>
-      <div class="base">
-        <input type="button" name="submit" value="SUBMIT" onclick="age()"/>
-      </div>
-      <div class="age" id="age"></div>
-    </form> 
+<body class="container-fluid">
+  <div id="heading"> 
+    <img src="images/akan.png" alt=" ">
+    <h1>Welcome To Akan Names</h1>
+    <h2 id="get">Get Your Akan Name Easy and Fast!!!!!!!</h2>
   </div>
-  <script type="text/javascript">
-    function age() {
-      var d1 = document.getElementById('date').value;
-      var m1 = document.getElementById('month').value;
-      var y1 = document.getElementById('year').value;
-
-      var date=new Date();;
-      var d2=date.getDate();
-      var m2=1+ date.getMonth();
-      var y2=date.getFullYear();
-      var month =[31,28,31,30,31,30,31,31,30,31,30,31]
-
-      if(d1>d2){
-        d2=d2+month(m2-1);
-        m2=m2-1;
-      }
-      if(m1>m2){
-       m2=m2+12;
-       y2=y2-1;
-      }
-      var d=d2-d1;
-      var m=m2-m1;
-      var y=y2-y1;
-      document.getElementById('age').innerHTML = 'Your age is' +y+'Years'+m+'Months'+d+'Days';
-   }
-  </script>
+  <div class="overlay">
+      <div class="container">
+        <h2>Enter Your Details Here!</h2>
+        <form name="myForm" class="form" onsubmit="validate();">
+          <div class="form-group">
+            <label for="number">Year of Birth:</label>
+            <input type="number" class="form-control" id="year" placeholder="Year of Birth" name="year">
+          </div>
+          <div class="form-group">
+            <label for="month">Month of Birth:</label>
+            <input type="number" class="form-control" id="month" placeholder="Month of Birth" name="month">
+          </div>
+          <div class="form-group">
+            <label for="date">Date of Birth:</label>
+            <input type="number" class="form-control" id="date" placeholder="Date of Birth" name="date">
+          </div>
+          <div class="form-group">
+            <label for="month">Gender</label><br>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="findName();">Get Name</button>
+          <br>
+        </form>
+        <p id="results"> </p>
+      </div>
+  </div>
+<script src="index.js"></script>
 </body>
 </html>
