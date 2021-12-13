@@ -3,7 +3,7 @@ var males = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 var females = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 
 function validate() {
-  //var genders = document.getElementsByName("gender");
+  var genders = document.getElementsByName("gender");
   if( year == "" || year.length !=4 || year >2100 || year <=1900) {
      alert( "Insert valid birth year!" );
      year.focus() ;

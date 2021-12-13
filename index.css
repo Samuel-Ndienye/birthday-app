@@ -69,7 +69,7 @@ body{
    font-size: 28px;
    margin-top:3%;
    margin-bottom:3%;
-   margin-left: 3%;
+   margin-left: 5%;
  }
  .form-month{
    margin-left: 2%;
@@ -96,5 +96,21 @@ body{
  input[type="number"]{
    width: 620px;
    height: 100%;
+   border-radius: 5px 5px 5px 5px;
  }
- 
+ input[type="number"]:hover{
+background-color: cyan;
+ }
+.buttons{
+  margin-left: 36%;
+  margin-top: 3%;
+  width: 220px;
+  height: 50px;
+  background-color: burlywood;
+  border-radius: 7px 7px 7px 7px;
+  font-size: 23px;
+  font-weight: 600;
+} 
+.buttons:hover{
+  background-color: cyan;
+}
