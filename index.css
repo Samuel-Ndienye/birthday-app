@@ -9,13 +9,27 @@ body{
   margin-top: 15%;
   padding-top: 8%;
   padding-bottom: 8%;
-  
+}
+.year{
+  font-size: 30px;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.month{
+  font-size: 27px;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.date{
+  font-size: 27px;
+  padding-right: 2%;
+  padding-left: 2%;
 }
  h1 {
    font-family: 'Gugi', cursive;
    font-weight: bolder;
    text-align: center;
-   color: whitesmoke;
+   color: white;
    margin-bottom: 0px;
    margin-top: 10px;
    padding-bottom: 2px;
