@@ -8,7 +8,7 @@ body{
 .container{
   margin-top: 15%;
   padding-top: 8%;
-  padding-bottom: 8%;
+  padding-bottom: 5%;
 }
 .year{
   font-size: 30px;
@@ -26,7 +26,6 @@ body{
   padding-left: 2%;
 }
  h1 {
-   font-family: 'Gugi', cursive;
    font-weight: bolder;
    text-align: center;
    color: white;
@@ -37,21 +36,12 @@ body{
    text-shadow: 2px 2px 5px black;
    
  }
- .page-footer{
-   background-color: rgb(0,0,0,0.8); 
-   width: 100%;
- }
  .overlay{
    background-color: rgb(0,0,0,0.5);
    margin-left: 25%;
    margin-right: 16%;
    opacity: 0.9;
    border-radius: 10px;
- }
- #get{
-   color: whitesmoke;
-   text-shadow: 2px 2px 5px black;
-   margin-bottom: 10px;
  }
  h2{
    text-align: center;
@@ -75,6 +65,7 @@ body{
    margin-left: 2%;
    color: white;
    font-weight:600;
+   margin-top: 3%;
  }
   .form-year{
     margin-left: 2%;
@@ -87,6 +78,8 @@ body{
   color: white;
   padding-left: 2%;
   font-weight:600;
+  margin-top: 3%;
+
  }
   input[type="radio"] {
    -webkit-transform: scale(1.5);
@@ -94,8 +87,8 @@ body{
    margin-left:4%;
  }
  input[type="number"]{
-   width: 620px;
-   height: 100%;
+   width: 520px;
+   height: 600%;
    border-radius: 5px 5px 5px 5px;
  }
  input[type="number"]:hover{
