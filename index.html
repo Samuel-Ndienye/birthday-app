@@ -10,25 +10,30 @@
   <link rel="stylesheet" href="images/">
 </head>
 <body>
-<form>
-  <div class="block">
-    <p class="title">Date</p>
-    <input type="text" name="date" id="date" placeholder="dd" minlength="1" maxlength="2" required>
- </div>
- <div class="block">
-   <p class="title">Month</p>
-   <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2" required>
- </div>
- <div class="block">
-   <p class="title">Year</p>
-   <input type="text" name="year" id="year" placeholder="yyyy" minlength="4" maxlength="4" required>
- </div>
-  <div class="base">
-    <input type="button" name="submit" value="SUBMIT" onclick="age()"/>
+  <div class="container">
+    <form>
+      <div class="base">
+        <h4>Age Calculator</h4>
+      </div>
+      <div class="block">
+        <p class="title">Date</p>
+        <input type="text" name="date" id="date" placeholder="dd" minlength="1" maxlength="2" required>
+     </div>
+     <div class="block">
+       <p class="title">Month</p>
+       <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2" required>
+     </div>
+     <div class="block">
+       <p class="title">Year</p>
+       <input type="text" name="year" id="year" placeholder="yyyy" minlength="4" maxlength="4" required>
+     </div>
+      <div class="base">
+        <input type="button" name="submit" value="SUBMIT" onclick="age()"/>
+      </div>
+      <div class="age">
+   
+      </div>
+    </form> 
   </div>
-  <div class="age">
-    
-  </div>
-</form> 
 </body>
 </html>
