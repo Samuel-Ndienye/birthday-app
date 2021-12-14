@@ -2,9 +2,9 @@ var days = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Satur
 var males = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 var females = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 
-function validate() {
+function verify() {
   var genders = document.getElementsByName("gender");
-  if( year == "" || year.length !=4 || year >2100 || year <=1900) {
+  if( year == "" || year.length !=4 || year >2023 || year <=1700) {
      alert( "Insert valid birth year!" );
      year.focus() ;
      return false;
